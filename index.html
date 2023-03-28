@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/LOGO.png" alt="LOGO">
+            </div>
+            <div class="site">
+                <h1>Grade Calculator</h1>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- CONTENT OF THE PAGE -->
+    <Section class="content">
+        <!-- 1st ROW -->
+        <div class="row">
+            <div class="col">
+                    <!-- left side of the page -->
+                <div class="left">
+                    <p>A grade calculator website is a tool 
+                        that helps students calculate their grades.
+                        This websites typically allow students to input their
+                        received grade for each subject, and then calculate 
+                        their overall grade based on the weight of each.
+                    </p>
+                </div>
+                <!-- right side of the page -->
+                <div class="right">
+                    <div class="basis">
+                        <img src="img/GRADING SYSTEM.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+	<section class="forms">
+		<div class="row">
+			<div class="col">
+				<!-- LEFT SIDE OF THE 2ND ROW -->
+				<div class="left">
+					<div class="fields" class="valur">
+						<form action="" class="subject" >
+							<p>
+								Subject
+							</p>
+							<input class="in" type="text" min="0" max="100" required>
+							<input class="in" type="text" min="0" max="100" required>
+							<input class="in" type="text" min="0" max="100" required>
+							<input class="in" type="text" min="0" max="100" required>
+							<input class="in" type="text" min="0" max="100" required>
+							<input class="in" type="text" min="0" max="100" required>
+							<input class="in" type="text" min="0" max="100" required>
+						</form>
+						<form action="" class="grade">
+							<p>Grades</p>
+							<input class="in" id="subj1"  type="number" min="0" max="100" required>
+							<input class="in" id="subj2"  type="number" min="0" max="100" required>
+							<input class="in" id="subj3"  type="number" min="0" max="100" required>
+							<input class="in" id="subj4"  type="number" min="0" max="100" required>
+							<input class="in" id="subj5"  type="number" min="0" max="100" required>
+							<input class="in" id="subj6"  type="number" min="0" max="100" required>
+							<input class="in" id="subj7"  type="number" min="0" max="100" required>
+							<!-- buttons -->
+							<button class="btn res" type="button" onclick="clearTextFields()">Reset</button>
+							<button id="calculateBtn" type="button" class="btn cal">CALCULATE</button>
+							
+						</form>
+					</div>
+                </div>
+                <!-- RIGHT SIDE OF THE 2ND ROW -->
+                <div class="right">
+                    <div class="result">
+                        <h1>Result</h1>
+                        <div class="grade-container">
+                            <p>Your Semester <br> AVG is</p>
+                            <p><span id="avg" class="in" onclick="calculate()"></span></p>
+                        </div> 
+                        <div class="remarks-container">
+                            <p>Descriptor: <span id="descriptor" class="in"></span></p>
+                            <p>Remarks: <span id="remarks" class="in"></span></p>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<script src="index.js"></script>
+</body>
+</html>
