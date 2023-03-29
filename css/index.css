@@ -6,7 +6,8 @@
 body{
     overflow-x: hidden;
     background: linear-gradient(to bottom, #FFFFFF, #4EBFE9);
-    height: 100%;
+    height: 100vh;
+    background-size: cover;
     
 }
 
